@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&subset=cyrillic-ext");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    background-image: unset !important;
+}
+
+/* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+.pageWrapper {
+    width: 100% !important;
+}
+
+.mainHeader {
+    display: none !important;
+}
+
+.contentFooter {
+    display: none !important;
+}
+
+.mainFooter {
+    display: none !important;
+}
+
+.spaceBetween {
+    margin-top: 0px !important;
+}
+
+.fullWidthContainer {
+    margin: 0px !important;
+    width: 100% !important;
+}
+
+.contentContainer {
+    float: inherit !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    padding: 0px !important;
+}
+
+/* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+
+.premium * {
+    font-family: "Open Sans", sans-serif !important;
+    box-sizing: border-box;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    color: #000000;
+}
+
+.main__banner {
+    background-image: url(https://agent.tui.ua/getmedia/e6baeab3-0de4-4548-9751-d42bbc6a0787/early-booking-2022?2);
+    width: 100%;
+    padding-bottom: 35.1%;
+    max-width: 1920px;
+    margin: 10px 0;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main__logo {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 0 0 50px 0;
+}
+
+/*************************/
+._title {
+    border-radius: 6px;
+    text-align: center;
+    color: #F2C94C;
+    font-weight: 600;
+    font-size: 1.5em !important;
+    background: #42464F;
+    padding: 22px 65px;
+    margin-bottom: 30px;
+}
+
+input._input {
+    width: 380px;
+    max-width: 100%;
+    padding: 16px 20px;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    font-size: 1em !important;
+    color: #000;
+}
+
+.hotels__transfer details,
+.add {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hotels__transfer summary:focus,
+.add summary:focus {
+    outline: none;
+}
+
+.hotels__transfer summary::-webkit-details-marker,
+.add summary::-webkit-details-marker {
+    display: none;
+}
+
+/**********************/
+.add[open]>summary::after {
+    content: "-";
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.add summary::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.action__details {
+    cursor: pointer;
+    margin: 20px auto 20px auto;
+}
+
+.action__details[open]>summary::after {
+    content: "▲";
+}
+
+.action__details>summary::after {
+    content: "▼";
+}
+
+.add summary {
+    color: #42464F;
+    font-size: 1.5em;
+    font-weight: 600;
+    display: block;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.add[open] {
+    display: block;
+}
+
+.add {
+    width: 49%;
+    max-width: 100%;
+    height: 100%;
+    border: 1px solid #F2C94C;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+.add summary {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+._info {
+    margin: 20px;
+    display: block;
+
+}
+
+._info li {
+    font-size: 14px !important;
+    margin-left: 40px;
+}
+
+.hotels__transfer summary {
+    color: #000;
+    font-size: 1em !important;
+    font-weight: 600;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 16px 20px;
+    cursor: pointer;
+    width: 380px;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.villas {
+    display: block !important;
+}
+
+/***********************************************************/
+.transfer__block {
+    padding: 20px;
+    width: 380px;
+    max-width: 100%;
+}
+
+.transfer__item {
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #42464F;
+    background-color: #42464F;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23FFCD03' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem #41454e44;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #41454e44;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+/***********************************************************/
+._card {
+    width: 258px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 16px 10px;
+    justify-content: center;
+    filter: contrast(120%);
+    position: relative;
+
+}
+
+._block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+._bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    min-height: 50px;
+    padding: 8px 6px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+._bottom:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+._card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #313131be, rgba(0, 0, 0, 0));
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.villa__wrapper {
+    position: relative;
+}
+
+.villa__wrapper .villa__category {
+    display: none;
+}
+
+.villa__wrapper:hover .villa__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 258px;
+    height: 280px;
+    z-index: 99;
+    background: #42464F;
+    padding: 14px 14px 16px 14px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.villa__wrapper:hover .villa__category::-webkit-scrollbar {
+    width: 6px;
+}
+
+.villa__wrapper:hover .villa__category::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 3px;
+}
+
+.villa__wrapper:hover .villa__category::-webkit-scrollbar-thumb {
+    background: #F2C94C;
+    border-radius: 3px;
+}
+
+.villa__wrapper:hover .villa__category::-webkit-scrollbar-thumb:hover {
+    background: #cea732;
+}
+
+.villa__top {
+    margin-bottom: 15px;
+}
+
+.category__item {
+    color: #F2C94C;
+    font-size: 13px !important;
+    font-weight: 600;
+    margin: 0 8px 4px 0;
+}
+
+.maxwidth100 {
+    max-width: 100% !important;
+}
+
+/********************/
+
+/* footer*/
+
+.contentFooter .columns {
+    margin: 0 10px;
+    padding: 20px 20px 15px;
+    background: #f6ede6;
+    display: none !important;
+}
+
+.mainFooter {
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#newFooterDesign {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "TUIreg", sans-serif !important;
+    color: #3c3c3c;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.footer__wraps {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__line {
+    border-top: solid 1px #dcdcdc;
+    border-bottom: solid 1px #dcdcdc;
+    margin: 30px 0;
+}
+
+.grid_1 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1%;
+    grid-row-gap: 42px;
+    padding: 29px 75px;
+}
+
+.grid_2 {
+    grid-template-columns: 69% 29%;
+    grid-column-gap: 1%;
+    padding: 0px 75px 29px;
+}
+
+.line__title {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.76px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 17px;
+}
+
+.line__lists,
+.social__lists {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-top: 0px !important;
+}
+
+.line__lists {
+    padding-bottom: 11px;
+}
+
+.line__lists-link {
+    text-decoration: none;
+    color: #3c3c3c;
+    transition: ease 0.5s all;
+    font-family: "TUIreg";
+}
+
+.line__lists-link:hover {
+    color: #1896cf;
+    transition: ease 0.5s all;
+}
+
+.social__list {
+    display: inline-block;
+    padding-right: 5px;
+    margin-top: 0px !important;
+}
+
+.social__link:hover .svg-icon_bottom path {
+    fill: #1896cf;
+    transition: ease 0.5s all;
+}
+
+.button__review {
+    padding-top: 32px;
+}
+
+.review__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    border-radius: 5px;
+    padding: 15px 42px 12px 43px;
+    transition: ease 0.5s all;
+}
+
+.review__link:hover {
+    transition: ease 0.5s all;
+    border: 1px solid #1896cf;
+}
+
+.pay__lines {
+    padding-bottom: 12px;
+}
+
+.pay__link {
+    text-decoration: none;
+    padding-right: 14px;
+}
+
+.m-store__link {
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #3c3c3c;
+    padding: 5px 12px 2px;
+    margin-right: 3px;
+    border-radius: 15px;
+    transition: ease 0.5s all;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.m-store__link:hover {
+    transition: ease 0.5s all;
+    border: 1px solid #1896cf;
+}
+
+.bootom__line {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.colspan__top {
+    padding-top: 30px;
+}
+
+.hotels__more {
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 34px 0;
+    cursor: pointer;
+    border: 1px solid #42464f94;
+    border-radius: 6px;
+    padding: 16px;
+    color: #42464fbf;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .add {
+        width: 100%;
+    }
+
+    .hotels__row,
+    .villas__filter {
+        justify-content: center;
+    }
+
+    .grid_1 {
+        grid-template-columns: 1fr;
+    }
+}
